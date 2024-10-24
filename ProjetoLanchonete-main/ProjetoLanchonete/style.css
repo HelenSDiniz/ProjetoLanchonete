@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* <Centraliza horizontalmente os itens */
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Arredonda os cantos da tarja */
+}
+
+#logo {
+    width: 150px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+}
+
+.header-info {
+    text-align: center; /* centraliza os textos do cabeçalho*/
+  }
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #d32f2f;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+nav {
+    background-color: #ffeb3b; /* cor de fundo*/
+    padding: 10px; /* espessura da tarja de menu*/
+}
+
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista - tira os pontinhso da frente textos */
+    margin: 0; /* espaçamento ao redor da lista do menu. */
+    padding: 0; /* tira o preenchimento padrão ao redor da lista. */
+    display: flex; /* Utiliza o layout flexível para alinhar os itens em linha. */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente. */
+}
+
+  
+  nav ul li {
+    margin: 0 20px; /* espaço entre os itens do meu*/
+  }
+  
+  nav ul li a {
+    color: #d32f2f;
+    text-decoration: none; /* remove o sublinhado dos links quando as opçoes não estiverem selecionadas*/
+    font-size: 1.2rem; /* tamanho da fonte dos itens do menu*/
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline; /*sublinhado dos links quando as opçoes nõ estiverem sellecionadas*/
+  }
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #d32f2f;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+#listaPedidos {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 6px;
+    background-color: #ff4500;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    clear: both;
+    margin-top: 20px;
+}
