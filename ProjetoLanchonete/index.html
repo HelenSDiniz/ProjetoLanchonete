@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ProjetoLanchonete/style.css">
+    <link rel="icon" href="imagens/logo.png" type="image/ico">
+    <title>Lanchonete Lunch&Lanche</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="../ProjetoLanchonete/imagens/logo.png" alt="Logo da Lanchonete" id="logo">
+        <div class="header-info">
+            <h1>Lanchonete Lunch&Lanche</h1>
+            <p>Av. Samuel Mac Dowell, 173 - Jardim Primavera, Camaragibe - PE</p>
+            <p>Telefone: (81) 97655-7634 | Email: contato@lunch.lanche.com.br</p>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+          <li><a href="#formFuncionario">Cadastro de Funcionário</a></li>
+          <li><a href="#formPedido">Cadastro de Pedido</a></li>
+          <li><a href="#listaPedidos">Lista de Pedidos</a></li>
+        </ul>
+      </nav>
+    <main>
+
+    <!-- Formulário Cadastro de Funcionários -->
+
+        <section>
+            <h2>Cadastro de Funcionário</h2>
+            <form id="formFuncionario">
+                <label for="nomeFuncionario">Nome:</label>
+                <input type="text" id="nomeFuncionario" required>
+                <label for="cpfFuncionario">CPF:</label>
+                <input type="text" id="cpfFuncionario" required maxlength="11">
+                <button type="submit">Cadastrar Funcionário</button>
+            </form>
+        </section>
+
+    <!-- Formulário Cadastro de Pedido -->
+        <section>
+            <h2>Cadastro de Pedido</h2>
+            <form id="formPedido">
+                <label for="nomePedido">Nome do Pedido:</label>
+                <input type="text" id="nomePedido" required>
+                <label for="descricaoPedido">Descrição:</label>
+                <input type="text" id="descricaoPedido">
+                <label for="responsavel">Responsável:</label>
+                <select id="responsavel" required></select>
+                <label for="status">Status:</label>
+                <select id="status" required>
+                    <option value="A Fazer">A Fazer</option>
+                    <option value="Fazendo">Fazendo</option>
+                    <option value="Pronto para entrega">Pronto para entrega</option>
+                </select>
+                <button type="submit">Cadastrar Pedido</button>
+            </form>
+        </section>
+
+    <!-- Lista de Pedidos -->
+        <section>
+            <h2>Lista de Pedidos</h2>
+            <div id="listaPedidos"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lunch&Lanche. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
